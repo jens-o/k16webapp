@@ -4,7 +4,7 @@
   $device = $_GET['device'];
 
   // Create cURL call
-  $service_url = 'http://k16.mynetgear.com/' . $command . '/' . $deviceß;
+  $service_url = 'http://k16.mynetgear.com/' . $command . '/' . $device;
   $curl = curl_init($service_url);
    
   // Send cURL to Yun board
