@@ -2,9 +2,10 @@
 
   $command = $_GET['command'];
   $device = $_GET['device'];
+  $remote = $_GET['remote'];
 
   // Create cURL call
-  $service_url = 'http://k16.mynetgear.com/' . $command . '/' . $device;
+  $service_url = 'http://k16.mynetgear.com/' . $command . '/' . $device . '/' . $remote;
   $curl = curl_init($service_url);
    
   // Send cURL to Yun board
